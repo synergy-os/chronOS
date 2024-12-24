@@ -15,4 +15,6 @@ echo Admin:default | chpasswd
 
 # Set up first-setup system
 cp -r /ctx/system/firstsetup /etc/
-cp -r /ctx/system/skel/* /etc/skel/
+mkdir /etc/skel/.config/
+mkdir /etc/skel/.config/autostart
+cp /ctx/system/firstsetup/misc/skel/firstsetup.desktop /etc/skel/.config/autostart/
