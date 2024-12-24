@@ -7,3 +7,4 @@ rpm-ostree install chromebook-linux-audio \
 	clapper \
 	flatseal \
 	zsh \
+	secrets \
