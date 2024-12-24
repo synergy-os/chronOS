@@ -10,5 +10,6 @@ RELEASE="$(rpm -E %fedora)"
 /ctx/scripts/quirks.sh
 
 # Enable services
-cp -r /ctx/services/postinstall.service /etc/systemd/system
+cp /ctx/services/postinstall.service /etc/systemd/system
+cp /ctx/binaries/postinstall /usr/bin
 systemctl enable postinstall.service
