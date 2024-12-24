@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-
-Name=firstsetup
-Exec=/usr/bin/blackbox-terminal -e /etc/firstsetup/bin/firstsetup
-Icon=preferences-desktop
