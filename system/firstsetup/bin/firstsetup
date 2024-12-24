@@ -18,7 +18,8 @@ firstsetuprun () {
 	flatpak install --system flathub it.mijorus.gearlever \
 		de.schmidhuberj.tubefeeder \
 		com.jeffser.Alpaca \
-		com.spotify.Client
+		com.spotify.Client \
+		com.google.Chrome
 
 	echo "Step 3: Configure flatpak repositories"
 	echo "Warning - This step requires priviliges, type in your Admin password when it asks you to!"
