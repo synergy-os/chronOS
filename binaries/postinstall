@@ -1,0 +1,7 @@
+#!/bin/bash
+
+notify-send "Running postinstall setup! Don't shut down/restart!"
+rpm-ostree override remove chromebook-linux-audio
+rpm-ostree override install chromebook-linux-audio
+systemctl disable postinstall.service
+notify-send "Finished postinstall setup!"
