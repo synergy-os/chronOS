@@ -2,15 +2,7 @@
 
 set -ouex pipefail
 
-install () {
-	/usr/bin/rpm-ostree install
-}
-
-remove () {
-	/usr/bin/rpm-ostree override remove
-}
-
-install chromebook-linux-audio \
+rpm-ostree install chromebook-linux-audio \
 	gstreamer1-plugin-openh264 \
 	google-chrome-stable \
 	zsh-autosuggestions \
@@ -21,6 +13,6 @@ install chromebook-linux-audio \
 	secrets \
 	zsh
 
-remove htop \
+rpm-ostree override remove htop \
 	nvtop \
 	ptyxis
