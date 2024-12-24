@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+
+Name=firstsetup
+Exec=/etc/firstsetup/bin/firstsetup
+Icon=preferences-desktop
+
+Comment=First Setup
