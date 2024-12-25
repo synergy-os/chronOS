@@ -7,6 +7,7 @@ if [[ "$(cat /etc/firstsetup/misc/setup.lock)" != "false" ]];
 		echo "Setup has already been run!" && exit 1
 	else
 		echo "Please type in your password." && USERRUNCMD=$(whoami) pkexec $BIN/systemsetup && $BIN/usersetup
+fi
 
 echo 'Nice! Youre all set now!'
 echo 'Happy experimenting!'
