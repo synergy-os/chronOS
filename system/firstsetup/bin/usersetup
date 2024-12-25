@@ -4,6 +4,7 @@ clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo "Step 3: Install Brew package manager"
+notify-send "Hey! Come back to the setup window; this command needs your input."
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 test -d $HOME/.linuxbrew && eval "$($HOME/.linuxbrew/bin/brew shellenv)"
 test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -13,6 +14,7 @@ clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo "Step 4: Install rust"
+notify-send "Hey! Come back to the setup window; this command needs your input."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 clear
