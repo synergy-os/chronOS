@@ -10,5 +10,7 @@ if [[ "$(cat /etc/firstsetup/misc/setup.lock)" != "false" ]];
 		echo "Please type in your password." && pkexec bash $BIN/systemsetup $USER && bash $BIN/usersetup
 fi
 
+echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo 'Nice! Youre all set now!'
 echo 'Happy experimenting!'
+echo "You can also close this window now."
