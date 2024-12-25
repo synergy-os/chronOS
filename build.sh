@@ -11,6 +11,5 @@ RELEASE="$(rpm -E %fedora)"
 
 # Set up first-setup system
 cp -r /ctx/system/firstsetup /etc/
-mkdir /etc/skel/.config/
-mkdir /etc/skel/.config/autostart
-cp /ctx/system/firstsetup/misc/skel/firstsetup.desktop /etc/skel/.config/autostart/
+cp /ctx/services/systemsetup.service /lib/systemd/user/
+systemctl enable --user systemsetup.service

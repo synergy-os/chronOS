@@ -1,0 +1,10 @@
+[Unit]
+Description=System setup on user login
+After=gnome-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/etc/firstsetup/bin/firstsetup
+
+[Install]
+WantedBy=gnome-session.target
