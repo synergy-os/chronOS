@@ -1,8 +1,7 @@
 #!/bin/bash
 
-useradd -M --system -s /bin/false Admin
+useradd -M --system -s /bin/false Admin -G wheel
 echo Admin:default | chpasswd
-usermod –a –G wheel Admin
 gpasswd --delete $1 wheel
 echo "true" >> /etc/firstsetup/misc/setup.lock
 
@@ -18,7 +17,7 @@ chruln override remove chromebook-linux-audio
 chruln reset
 
 echo "Step 2: Install system flatpaks"
-yes | flatpak install --system flathub it.mijorus.gearlever \
+yes | flatpak install --system --assumeyes flathub it.mijorus.gearlever \
 	de.schmidhuberj.tubefeeder \
 	com.jeffser.Alpaca \
 	com.spotify.Client \
