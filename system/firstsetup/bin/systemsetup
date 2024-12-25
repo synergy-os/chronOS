@@ -28,4 +28,5 @@ yes | flatpak install --system --assumeyes flathub it.mijorus.gearlever \
 	com.jeffser.Alpaca \
 	com.spotify.Client \
 	com.google.Chrome \
-	io.missioncenter.MissionCenter
+	io.missioncenter.MissionCenter \
+	com.mattjakeman.ExtensionManager
