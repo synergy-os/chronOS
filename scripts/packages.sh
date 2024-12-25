@@ -14,4 +14,5 @@ rpm-ostree install chromebook-linux-audio \
 
 rpm-ostree override remove htop \
 	nvtop \
-	ptyxis
+	ptyxis \
+	gnome-system-monitor

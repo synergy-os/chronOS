@@ -23,7 +23,8 @@ firstsetuprun () {
 		de.schmidhuberj.tubefeeder \
 		com.jeffser.Alpaca \
 		com.spotify.Client \
-		com.google.Chrome
+		com.google.Chrome \
+		io.missioncenter.MissionCenter
 
 	echo "Step 3: Configure flatpak repositories"
 	flatpak --system remote-delete flathub
