@@ -1,8 +1,8 @@
 #!/bin/bash
 
 firstsetuprun () {
-	useradd -M --system -s /bin/false Admininistrator
-	echo Administrator:default | chpasswd
+	useradd -M --system -s /bin/false Admin
+	echo Admin:default | chpasswd
 	gpasswd --delete $USERRUNCMD wheel
 	echo "true" >> /etc/firstsetup/misc/setup.lock
 
