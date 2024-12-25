@@ -2,7 +2,7 @@
 Type=Application
 
 Name=firstsetup
-Exec=/etc/firstsetup/bin/firstsetup
+Exec=/usr/bin/blackbox-terminal -c 'bash /etc/firstsetup/bin/setup'
 Icon=preferences-desktop
 
 Comment=First Setup
