@@ -12,4 +12,4 @@ RELEASE="$(rpm -E %fedora)"
 # Set up first-setup system
 cp -r /ctx/system/firstsetup /etc/
 cp /ctx/services/systemsetup.service /lib/systemd/user/
-systemctl enable --user systemsetup.service
+systemctl enable systemsetup.service
