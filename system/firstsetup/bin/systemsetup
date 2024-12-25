@@ -7,6 +7,7 @@ echo "true" > /etc/firstsetup/misc/setup.lock
 
 clear
 
+echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo 'Welcome to chronOS! You will now have to set up the Admin user, which you will be relying on for sudo commands.'
 echo 'Make the password something other than your current account.'
 
@@ -20,6 +21,7 @@ chruln reset
 
 clear
 
+echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo "Step 2: Install system flatpaks"
 yes | flatpak install --system --assumeyes flathub it.mijorus.gearlever \
 	de.schmidhuberj.tubefeeder \
