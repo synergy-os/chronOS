@@ -1,3 +1,5 @@
+#!/bin/bash
+
 useradd -M --system -s /bin/false Admin
 echo Admin:default | chpasswd
 gpasswd --delete $USERRUNCMD wheel
