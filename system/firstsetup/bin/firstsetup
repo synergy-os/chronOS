@@ -1,56 +1,12 @@
 #!/bin/bash
 
-firstsetuprun () {
-	useradd -M --system -s /bin/false Admin
-	echo Admin:default | chpasswd
-	gpasswd --delete $USERRUNCMD wheel
-	echo "true" >> /etc/firstsetup/misc/setup.lock
-
-	echo 'Welcome to chronOS! You will now have to set up the Admin user, which you will be relying on for sudo commands.'
-	echo 'Make the password something other than your current account.'
-	echo 'The current password for Admin is "default".'
-
-	passwd Admin
-
-	echo "Great! Now, just sit back and relax while we do some extra tasks..."
-
-	echo "Step 1: Install audio drivers"
-	chruln override remove chromebook-linux-audio
-	chruln install chromebook-linux-audio
-
-	echo "Step 2: Install system flatpaks"
-	flatpak install --system flathub it.mijorus.gearlever \
-		de.schmidhuberj.tubefeeder \
-		com.jeffser.Alpaca \
-		com.spotify.Client \
-		com.google.Chrome \
-		io.missioncenter.MissionCenter
-
-	echo "Step 3: Configure flatpak repositories"
-	flatpak --system remote-delete flathub
-	flatpak --system remote-delete fedora
-}
-
-useractions () {
-	echo "Step 4: Install Brew package manager"
-	bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	test -d $HOME/.linuxbrew && eval "$($HOME/.linuxbrew/bin/brew shellenv)"
-	test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-	echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
-
-	echo "Step 5: Install rust"
-	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-	echo "Step 6: Configure flatpak repositories (user)"
-	flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-}
+BIN=/etc/firstsetup/bin
 
 if [[ "$(cat /etc/firstsetup/misc/setup.lock)" != "false" ]];
 	then
 		echo "Setup has already been run!" && exit 1
 	else
-		echo "Please type in your password." && USERRUNCMD=$(whoami) pkexec firstsetuprun && useractions
-fi
+		echo "Please type in your password." && USERRUNCMD=$(whoami) pkexec $BIN/systemsetup && $BIN/usersetup
 
 echo 'Nice! Youre all set now!'
 echo 'Happy experimenting!'
