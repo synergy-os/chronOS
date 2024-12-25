@@ -17,9 +17,9 @@ chruln override remove chromebook-linux-audio
 chruln install chromebook-linux-audio
 
 echo "Step 2: Install system flatpaks"
-flatpak install --system flathub it.mijorus.gearlever \
+yes | flatpak install --system flathub it.mijorus.gearlever \
 	de.schmidhuberj.tubefeeder \
 	com.jeffser.Alpaca \
 	com.spotify.Client \
 	com.google.Chrome \
-	io.missioncenter.MissionCenter | yes
+	io.missioncenter.MissionCenter
