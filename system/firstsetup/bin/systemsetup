@@ -5,6 +5,8 @@ echo Admin:default | chpasswd
 gpasswd --delete $1 wheel
 echo "true" > /etc/firstsetup/misc/setup.lock
 
+clear
+
 echo 'Welcome to chronOS! You will now have to set up the Admin user, which you will be relying on for sudo commands.'
 echo 'Make the password something other than your current account.'
 
@@ -15,6 +17,8 @@ echo "Great! Now, just sit back and relax while we do some extra tasks..."
 echo "Step 1: Install audio drivers"
 chruln override remove chromebook-linux-audio
 chruln reset
+
+clear
 
 echo "Step 2: Install system flatpaks"
 yes | flatpak install --system --assumeyes flathub it.mijorus.gearlever \
