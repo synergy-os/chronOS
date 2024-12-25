@@ -3,7 +3,7 @@
 useradd -M --system -s /bin/false Admin -G wheel
 echo Admin:default | chpasswd
 gpasswd --delete $1 wheel
-echo "true" >> /etc/firstsetup/misc/setup.lock
+echo "true" > /etc/firstsetup/misc/setup.lock
 
 echo 'Welcome to chronOS! You will now have to set up the Admin user, which you will be relying on for sudo commands.'
 echo 'Make the password something other than your current account.'
