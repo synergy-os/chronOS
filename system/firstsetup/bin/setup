@@ -1,12 +1,13 @@
 #!/bin/bash
 
 BIN=/etc/firstsetup/bin
+USER=$(whoami)
 
 if [[ "$(cat /etc/firstsetup/misc/setup.lock)" != "false" ]];
 	then
 		echo "Setup has already been run!" && exit 1
 	else
-		echo "Please type in your password." && pkexec USERRUNCMD=$(whoami) bash $BIN/systemsetup && bash $BIN/usersetup
+		echo "Please type in your password." && pkexec bash $BIN/systemsetup $USER && bash $BIN/usersetup
 fi
 
 echo 'Nice! Youre all set now!'
