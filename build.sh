@@ -11,6 +11,5 @@ RELEASE="$(rpm -E %fedora)"
 
 # Set up first-setup system
 cp -r /ctx/system/firstsetup /etc/
-mkdir -p /root/.config/systemd/user/gnome-session.target.wants/
-cp /ctx/services/systemsetup.service /root/.config/systemd/user/gnome-session.target.wants/
-systemctl enable --user systemsetup.service
+cp /ctx/services/systemsetup.service /etc/systemd/system
+systemctl enable systemsetup.service
