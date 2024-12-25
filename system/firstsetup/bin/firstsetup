@@ -26,8 +26,8 @@ firstsetuprun () {
 		com.google.Chrome
 
 	echo "Step 3: Configure flatpak repositories"
-	flatpak --system remove-remote flathub
-	flatpak --system remove-remote fedora
+	flatpak --system remote-delete flathub
+	flatpak --system remote-delete fedora
 }
 
 useractions () {
@@ -37,7 +37,10 @@ useractions () {
 	test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 	echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
-	echo "Step 5: Configure flatpak repositories (user)"
+	echo "Step 5: Install rust"
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+	echo "Step 6: Configure flatpak repositories (user)"
 	flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
