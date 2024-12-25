@@ -4,7 +4,7 @@ After=graphical-session.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/blackbox-terminal -c /etc/firstsetup/bin/firstsetup
+ExecStart=/usr/bin/blackbox-terminal -c /etc/firstsetup/bin/setup
 
 [Install]
 WantedBy=graphical-session.target
