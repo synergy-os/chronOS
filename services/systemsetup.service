@@ -6,7 +6,7 @@ After=gdm.service
 Type=oneshot
 ExecStart=/usr/bin/mv /etc/firstsetup/misc/skel/firstsetup.desktop /home/*/.config/autostart/
 RemainAfterExit=true
-ExecStartPost=/usr/bin/systemctl diable systemsetup.service
+ExecStartPost=/usr/bin/systemctl disable systemsetup.service
 
 [Install]
 WantedBy=default.target
