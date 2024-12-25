@@ -45,6 +45,8 @@ useractions () {
 	flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
+sleep 5
+
 if [[ "$(cat /etc/firstsetup/misc/setup.lock)" != "false" ]];
 	then
 		echo "Setup has already been run!" && exit 1
