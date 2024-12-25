@@ -1,9 +1,11 @@
+```
 ╱╱╱╭╮╱╱╱╱╱╱╱╱╱╭━━━┳━━━╮
 ╱╱╱┃┃╱╱╱╱╱╱╱╱╱┃╭━╮┃╭━╮┃
 ╭━━┫╰━┳━┳━━┳━╮┃┃╱┃┃╰━━╮
 ┃╭━┫╭╮┃╭┫╭╮┃╭╮┫┃╱┃┣━━╮┃
 ┃╰━┫┃┃┃┃┃╰╯┃┃┃┃╰━╯┃╰━╯┃
 ╰━━┻╯╰┻╯╰━━┻╯╰┻━━━┻━━━╯
+```
 
 Hey there! chronOS is my ublue operating system made for my devices.
 The name is inspired by the chromeOS user, "chronos."
