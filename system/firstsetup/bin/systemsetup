@@ -15,7 +15,7 @@ echo "Great! Now, just sit back and relax while we do some extra tasks..."
 
 echo "Step 1: Install audio drivers"
 chruln override remove chromebook-linux-audio
-chruln install chromebook-linux-audio
+chruln reset
 
 echo "Step 2: Install system flatpaks"
 yes | flatpak install --system flathub it.mijorus.gearlever \

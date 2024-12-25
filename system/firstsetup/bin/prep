@@ -1,0 +1,7 @@
+#!/bin/bash
+
+awk -F: '$3 >= 1000 && $1 != "root" {print $6}' /etc/passwd | while read home_dir; do
+    if [ -d "$home_dir" ]; then
+        cp "/etc/firstsetup/misc/skel/firstsetup.desktop" "$home_dir/.config/autostart/"
+    fi
+done
