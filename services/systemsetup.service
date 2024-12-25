@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash /etc/firstsetup/bin/setup
+ExecStart=/usr/bin/blackbox-terminal -c '/usr/bin/bash /etc/firstsetup/bin/setup'
 RemainAfterExit=true
 Environment=USER=%I
 ExecStartPost=/usr/bin/systemctl disable systemsetup.service
