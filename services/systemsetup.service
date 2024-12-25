@@ -1,10 +1,13 @@
 [Unit]
-Description=System setup on user login
-After=graphical-session.target
+Description=Setup system
+After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/blackbox-terminal -c 'bash /etc/firstsetup/bin/setup'
+ExecStart=/usr/bin/bash /etc/firstsetup/bin/setup
+RemainAfterExit=true
+Environment=USER=%I
+ExecStartPost=/usr/bin/systemctl disable systemsetup.service
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=multi-user.target
