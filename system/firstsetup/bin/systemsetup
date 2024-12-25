@@ -23,7 +23,3 @@ flatpak install --system flathub it.mijorus.gearlever \
 	com.spotify.Client \
 	com.google.Chrome \
 	io.missioncenter.MissionCenter | yes
-
-echo "Step 3: Configure flatpak repositories"
-flatpak --system remote-delete flathub
-flatpak --system remote-delete fedora
