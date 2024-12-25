@@ -1,13 +1,12 @@
 [Unit]
-Description=Setup system
-After=network.target
+Description=System setup preperation
+After=gdm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/blackbox-terminal -c '/usr/bin/bash /etc/firstsetup/bin/setup'
+ExecStart=/usr/bin/mv /etc/firstsetup/misc/setup.desktop /home/*/.config/autostart
 RemainAfterExit=true
-Environment=USER=%I
-ExecStartPost=/usr/bin/systemctl disable systemsetup.service
+ExecStartPost=/usr/bin/systemctl diable systemsetup.service
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
