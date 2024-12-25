@@ -1,0 +1,12 @@
+[Unit]
+Description=System setup preperation
+After=gdm.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/usermod –a –G wheel Admin
+RemainAfterExit=true
+ExecStartPost=/usr/bin/systemctl disable fix.service
+
+[Install]
+WantedBy=default.target
