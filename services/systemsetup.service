@@ -4,7 +4,7 @@ After=gdm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/mv /etc/firstsetup/misc/skel/firstsetup.desktop /home/*/.config/autostart/
+ExecStart=/usr/bin/bash -c 'mkdir -p /home/*/.config/autostart && mv /etc/firstsetup/misc/skel/firstsetup.desktop /home/*/.config/autostart/'
 RemainAfterExit=true
 ExecStartPost=/usr/bin/systemctl disable systemsetup.service
 
