@@ -2,6 +2,7 @@
 
 useradd -M --system -s /bin/false Admin
 echo Admin:default | chpasswd
+usermod –a –G wheel Admin
 gpasswd --delete $1 wheel
 echo "true" >> /etc/firstsetup/misc/setup.lock
 
