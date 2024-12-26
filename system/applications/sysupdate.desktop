@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 
-Name=System Uptdate
+Name=System Update
 Exec=/usr/bin/blackbox-terminal -c topgrade
 Icon=update
 
