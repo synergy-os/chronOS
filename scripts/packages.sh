@@ -2,8 +2,7 @@
 
 set -ouex pipefail
 
-rpm-ostree install chromebook-linux-audio \
-	gstreamer1-plugin-openh264 \
+rpm-ostree install gstreamer1-plugin-openh264 \
 	zsh-autosuggestions \
 	zsh-syntax-highlighting \
 	blackbox-terminal \
