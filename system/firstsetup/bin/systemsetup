@@ -24,10 +24,7 @@ clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo "Step 2: Install system flatpaks"
-yes | flatpak install --system --assumeyes flathub it.mijorus.gearlever \
-	de.schmidhuberj.tubefeeder \
-	com.jeffser.Alpaca \
-	com.spotify.Client \
+yes | flatpak install --system --assumeyes com.spotify.Client \
 	com.google.Chrome \
 	io.missioncenter.MissionCenter \
 	com.mattjakeman.ExtensionManager
