@@ -24,3 +24,7 @@ echo "Step 5: Configure flatpak repositories (user)"
 flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 clear
+
+echo "$(cat /etc/firstsetup/misc/branding.txt)"
+echo "Step 6: Install System Update (topgrade)"
+$HOME/.cargo/bin/cargo install topgrade
