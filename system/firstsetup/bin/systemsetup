@@ -16,9 +16,7 @@ passwd Admin
 echo "Great! Now, just sit back and relax while we do some extra tasks..."
 
 echo "Step 1: Install audio drivers"
-chruln override remove chromebook-linux-audio
-chruln reset
-
+python3 /usr/share/chromebook-linux-audio/setup-audio
 clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
