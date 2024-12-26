@@ -7,6 +7,7 @@ rpm-ostree install chromebook-linux-audio \
 	zsh-autosuggestions \
 	zsh-syntax-highlighting \
 	blackbox-terminal \
+ 	util-linux \
 	clapper \
 	flatseal \
 	secrets \
