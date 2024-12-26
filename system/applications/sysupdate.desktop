@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+
+Name=System Uptdate
+Exec=/usr/bin/blackbox-terminal -c topgrade
+Icon=update
+
+Comment=Update your system
+
+Categories=System;Administration;
+Keywords=system;update;topgrade;
