@@ -12,5 +12,5 @@ fi
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo 'Nice! Youre all set now!'
-echo 'Happy experimenting!'
+echo 'We heavily recommend you reboot the system NOW to apply changes.'
 echo "You can also close this window now."
