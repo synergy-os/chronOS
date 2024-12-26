@@ -11,7 +11,8 @@ rpm-ostree install chromebook-linux-audio \
 	clapper \
 	flatseal \
 	secrets \
-	zsh
+	zsh \
+ 	gcc
 
 rpm-ostree override remove htop \
 	nvtop \
