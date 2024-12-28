@@ -28,3 +28,15 @@ yes | flatpak install --system --assumeyes com.spotify.Client \
 	com.google.Chrome \
 	io.missioncenter.MissionCenter \
 	com.mattjakeman.ExtensionManager
+clear
+
+echo "$(cat /etc/firstsetup/misc/branding.txt)"
+Step 3: Install apx-gui
+git clone https://github.com/Vanilla-OS/apx-gui
+cd apx-gui
+meson setup build
+ninja -C build
+ninja -C build install
+cd ..
+rm -rf apx-gui
+clear
