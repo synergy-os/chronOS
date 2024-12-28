@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 rpm-ostree install go git make podman
+mkdir -p /root
+mkdir -p /root/.cache
+mkdir -p /root/.cache/go-build
 
 # apx
 cd ~
