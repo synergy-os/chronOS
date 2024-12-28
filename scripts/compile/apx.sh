@@ -6,9 +6,9 @@ rpm-ostree install go git make podman
 # apx
 git clone --recursive https://github.com/Vanilla-OS/apx.git
 cd apx
-make -C build
-make -C install
-make -C install-manpages
+make build
+make install
+make install-manpages
 cd ..
 rm -rf apx
 
