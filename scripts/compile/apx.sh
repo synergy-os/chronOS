@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ouex pipefail
-rpm-ostree install go git make podman meson glib2
+rpm-ostree install go git make podman meson glib2-devel
 
 # apx
 git clone --recursive https://github.com/Vanilla-OS/apx.git
