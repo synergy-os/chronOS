@@ -4,6 +4,7 @@ ARG SOURCE_TAG="latest"
 
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
+RUN mkdir -p /root
 COPY / /ctx
 
 RUN mkdir -p /var/lib/alternatives && \
