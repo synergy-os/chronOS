@@ -4,14 +4,14 @@ set -ouex pipefail
 rpm-ostree install go git make podman
 
 # apx
+cd /root
 git clone --recursive https://github.com/Vanilla-OS/apx.git
 cd apx
 make build
 make install
 make install-manpages
-cd /
+cd /root
 rm -rf apx
-
 
 # apx-gui
 git clone https://github.com/Vanilla-OS/apx-gui
