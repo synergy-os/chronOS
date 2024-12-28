@@ -10,3 +10,12 @@ make install
 make install-manpages
 cd ..
 rm -rf apx
+
+git clone https://github.com/Vanilla-OS/apx-gui
+cd apx-gui
+meson setup build
+ninja -C build
+ninja -C build install
+cd ..
+rm -rf apx-gui
+clear
