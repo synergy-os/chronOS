@@ -4,7 +4,9 @@ ARG SOURCE_TAG="latest"
 
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
+# fix for cache being unusable
 RUN rm -rf /root && mkdir -p /root
+
 COPY / /ctx
 
 RUN mkdir -p /var/lib/alternatives && \
