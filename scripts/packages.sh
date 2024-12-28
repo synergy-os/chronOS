@@ -21,4 +21,3 @@ rpm-ostree override remove htop \
 # Run any compile scripts
 
 bash /ctx/scripts/compile/apx.sh
-bash /ctx/scripts/compile/apx-gui.sh
