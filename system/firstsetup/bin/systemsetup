@@ -31,7 +31,7 @@ yes | flatpak install --system --assumeyes com.spotify.Client \
 clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
-Step 3: Install apx-gui
+echo "Step 3: Install apx-gui"
 git clone https://github.com/Vanilla-OS/apx-gui
 cd apx-gui
 meson setup build
