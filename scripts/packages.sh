@@ -17,3 +17,8 @@ rpm-ostree override remove htop \
 	nvtop \
 	ptyxis \
 	gnome-system-monitor
+
+# Run any compile scripts
+
+bash /ctx/scripts/compile/apx.sh
+bash /ctx/scripts/compile/apx-gui.sh
