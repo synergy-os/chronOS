@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+# install pkgs
 rpm-ostree install gstreamer1-plugin-openh264 \
 	zsh-autosuggestions \
 	zsh-syntax-highlighting \
@@ -19,6 +20,7 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	zsh \
  	gcc
 
+# remove pkgs from base image
 rpm-ostree override remove htop \
 	nvtop \
 	ptyxis \
