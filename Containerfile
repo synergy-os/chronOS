@@ -14,8 +14,8 @@ RUN --mount=type=cache,target=/var/cache/libdnf5 \
 
 FROM builder-compiler as output-compiler
 
-COPY compile /
-RUN bash /compile/apx.sh
+COPY compile/ /tmp
+RUN bash /tmp/apx.sh
 
 # Build the base image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
