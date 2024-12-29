@@ -6,7 +6,7 @@ ARG DNF5_FLAGS="--setopt=install_weak_deps=0 --skip-unavailable"
 
 # Compile programs
 FROM fedora:41 as builder-compiler
-ARG BUILD_DEPS="go git podman make desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
+ARG BUILD_DEPS="go git podman make gettext desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
 
 RUN mkdir -p /output
 RUN --mount=type=cache,target=/var/cache/libdnf5 \
