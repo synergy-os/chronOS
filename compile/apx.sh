@@ -14,6 +14,6 @@ make install && make install-manpages
 # compile apx-gui
 git clone https://github.com/Vanilla-OS/apx-gui /tmp/apx-gui
 cd /tmp/apx-gui
-meson setup build --prefix=/output
+meson setup build --prefix=/comproot
 ninja -C build
 ninja -C build install
