@@ -6,7 +6,7 @@ ARG DNF5_FLAGS="--setopt=install_weak_deps=0 --skip-unavailable"
 
 # Compile programs
 FROM fedora:41 as builder-compiler
-ARG BUILD_DEPS="go git podman make desktop-file-utils meson glib2-devel gettext python3 python3-gobject python3-pyyaml python3-requests gobject-introspection gobject-introspection-devel"
+ARG BUILD_DEPS="go git podman make desktop-file-utils meson glib2 glib2-devel gettext python3 python3-gobject python3-pyyaml python3-requests gobject-introspection gobject-introspection-devel"
 
 RUN mkdir -p /output
 RUN --mount=type=cache,target=/var/cache/libdnf5 \
