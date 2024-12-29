@@ -6,7 +6,7 @@ set -euxo pipefail
 git clone --recursive https://github.com/Vanilla-OS/apx.git /tmp/apx
 cd /tmp/apx
 line_old="PREFIX := /usr"
-line_new="PREFIX := /output"
+line_new="PREFIX := /comproot"
 sed -i "s%$line_old%$line_new%g" Makefile
 make build 
 make install && make install-manpages
