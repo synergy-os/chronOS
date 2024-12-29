@@ -19,7 +19,6 @@ RUN bash /tmp/compile/apx.sh
 
 # Build the base image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
-ARG RUNTIME_DEPS="gettext python3-gobject python3-pyyaml python3-requests gobject-introspection gobject-introspection-devel"
 RUN echo ${RUNTIME_DEPS} | xargs rpm-ostree install -y
 
 COPY / /ctx

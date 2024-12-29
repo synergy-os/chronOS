@@ -6,6 +6,12 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	zsh-autosuggestions \
 	zsh-syntax-highlighting \
 	blackbox-terminal \
+	gettext \
+	python3-gobject \
+	python3-pyyaml \
+	python3-requests \
+	gobject-introspection \
+	gobject-introspection-devel \
  	util-linux \
 	clapper \
 	flatseal \
@@ -17,8 +23,4 @@ rpm-ostree override remove htop \
 	nvtop \
 	ptyxis \
 	gnome-system-monitor \
- 	toolbox
-
-# Run any compile scripts
-
-bash /ctx/scripts/compile/apx.sh
+	toolbox
