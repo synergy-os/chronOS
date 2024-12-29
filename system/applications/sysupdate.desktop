@@ -2,7 +2,7 @@
 Type=Application
 
 Name=System Update
-Exec=/usr/bin/blackbox-terminal -c topgrade
+Exec=/usr/bin/blackbox-terminal -c 'topgrade && echo "System Update has finished. You may close this window." && sleep 1d'
 Icon=update
 
 Comment=Update your system
