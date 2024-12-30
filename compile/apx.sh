@@ -4,8 +4,8 @@
 set -ouex pipefail
 BUILD_DEPS="go make gettext desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
 rpm-ostree install $BUILD_DEPS
-mkdir /tmp/gocache
-mkdir /usr/cmp
+mkdir /tmp/gocache && mkdir /usr/cmp
+rm /root && mkdir /root
 
 # compile apx
 git clone --recursive https://github.com/Vanilla-OS/apx.git /tmp/apx
@@ -23,3 +23,4 @@ ninja -C build
 ninja -C build install
 
 rpm-ostree remove $BUILD_DEPS
+ln -s /var/roothome /root
