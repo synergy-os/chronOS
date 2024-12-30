@@ -23,4 +23,4 @@ ninja -C build
 ninja -C build install
 
 rpm-ostree remove $BUILD_DEPS
-ln -s /var/roothome /root
+rm -r /root && ln -s /var/roothome /root
