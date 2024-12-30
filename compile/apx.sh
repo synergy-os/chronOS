@@ -21,4 +21,8 @@ meson setup build -Dprefix=/usr/cmp/apx-gui
 ninja -C build
 ninja -C build install
 
+# post compile setup
 rm -r /root && ln -s /var/roothome /root
+ln -s /usr/cmp/apx/bin/apx /usr/bin/apx
+ln -s /usr/cmp/apx-gui/bin/apx-gui /usr/bin/apx-gui
+ln -s /usr/cmp/apx-gui/share/applications/org.vanillaos.ApxGUI.desktop /usr/share/applications/org.vanillaos.ApxGUI.desktop
