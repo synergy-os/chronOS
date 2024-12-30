@@ -26,3 +26,4 @@ rm -r /root && ln -s /var/roothome /root
 ln -s /usr/cmp/apx/bin/apx /usr/bin/apx
 ln -s /usr/cmp/apx-gui/bin/apx-gui /usr/bin/apx-gui
 ln -s /usr/cmp/apx-gui/share/applications/org.vanillaos.ApxGUI.desktop /usr/share/applications/org.vanillaos.ApxGUI.desktop
+mkdir /usr/share/apx && git clone https://github.com/Vanilla-OS/vanilla-apx-configs.git /usr/share/apx
