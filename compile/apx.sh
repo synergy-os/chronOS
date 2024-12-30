@@ -3,6 +3,7 @@
 set -ouex pipefail
 BUILD_DEPS="go make fuse-overlayfs fuse gettext desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
 rpm-ostree install $BUILD_DEPS
+rm /root && mkdir /root
 
 # setup overlayfs
 mkdir -p /comproot /comproot.work
