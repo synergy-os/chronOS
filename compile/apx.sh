@@ -10,8 +10,8 @@ mkdir /usr/cmp
 # compile apx
 git clone --recursive https://github.com/Vanilla-OS/apx.git /tmp/apx
 cd /tmp/apx
-sed -i 's,\(GOARCH=amd64\),\1 GOCACHE=/tmp/gocache,' Makefile
 sed -i "s%PREFIX := /usr%PREFIX := /usr/cmp/apx%g" Makefile
+go env -w GOCACHE=/tmp/gocache
 make build 
 make install && make install-manpages
 
