@@ -25,5 +25,4 @@ COPY --from=output-compiler /comproot/ /usr/
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/build.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
-    ln -s /usr /comproot && \
     ostree container commit
