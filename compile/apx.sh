@@ -1,13 +1,9 @@
 #!/bin/bash
 
 set -ouex pipefail
-BUILD_DEPS="go make fuse-overlayfs fuse gettext desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
+BUILD_DEPS="go make gettext desktop-file-utils meson glib2 glib2-devel gtk-update-icon-cache"
 rpm-ostree install $BUILD_DEPS
-rm /root && mkdir /root
-
-# setup overlayfs
-mkdir -p /comproot /comproot.work
-fuse-overlayfs -o lowerdir=/usr,upperdir=/comproot,workdir=/comproot.work,allow_other /usr
+rm /root && mkdir /root && rm -r /usr/local/share && mkdir /usr/local/share
 
 # compile apx
 git clone --recursive https://github.com/Vanilla-OS/apx.git /tmp/apx
@@ -22,5 +18,4 @@ meson setup build
 ninja -C build
 ninja -C build install
 
-fusermount -u -z /usr
 rpm-ostree remove $BUILD_DEPS

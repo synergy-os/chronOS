@@ -107,9 +107,6 @@ jobs:
             ${{ steps.generate-tags.outputs.alias_tags }}
           labels: ${{ steps.meta.outputs.labels }}
           oci: false
-          extra-args: |
-              --cap-add=CAP_SYS_ADMIN
-              --device /dev/fuse
 
       # Workaround bug where capital letters in your GitHub username make it impossible to push to GHCR.
       # https://github.com/macbre/push-to-ghcr/issues/12

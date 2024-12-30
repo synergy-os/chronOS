@@ -10,10 +10,6 @@ COPY / /ctx
 # Run compiler scripts
 RUN bash /ctx/compile/apx.sh
 
-# Sync changes
-COPY /comproot/ /usr/
-RUN rm -rf /comproot /comproot.work
-
 # Begin regular build jobs
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/build.sh && \
