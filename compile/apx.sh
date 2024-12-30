@@ -11,7 +11,6 @@ rm /root && mkdir /root
 git clone --recursive https://github.com/Vanilla-OS/apx.git /tmp/apx
 cd /tmp/apx
 sed -i "s%PREFIX := /usr%PREFIX := /usr/cmp/apx%g" Makefile
-go env -w GOCACHE=/tmp/gocache
 make build 
 make install && make install-manpages
 
