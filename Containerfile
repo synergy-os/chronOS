@@ -8,11 +8,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
 # Run compiler scripts
-RUN <<EOF
-for file in /ctx/compile/*.sh; do
-  bash "$file"
-done
-EOF
+RUN bash /ctx/compile/apx.sh
 
 # Sync changes
 COPY /comproot/ /usr/
