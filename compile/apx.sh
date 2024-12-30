@@ -21,5 +21,5 @@ meson setup build -Dprefix=/usr/cmp/apx-gui
 ninja -C build
 ninja -C build install
 
-rpm-ostree override remove $BUILD_DEPS
+rpm-ostree override remove go meson
 rm -r /root && ln -s /var/roothome /root
