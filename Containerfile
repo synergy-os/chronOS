@@ -8,9 +8,11 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
 # Run compiler scripts
-RUN for file in /ctx/compile/*.sh; do \
-  bash "$file" \
+RUN <<EOF
+for file in /ctx/compile/*.sh; do
+  bash "$file"
 done
+EOF
 
 # Sync changes
 COPY /comproot/ /usr/
