@@ -6,6 +6,7 @@ ARG SOURCE_TAG="latest"
 # Build the base image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
+RUN ls -la /usr/local/share && exit 1
 
 # Run compiler scripts
 RUN bash /ctx/compile/apx.sh
