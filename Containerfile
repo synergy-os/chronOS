@@ -8,8 +8,8 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
 # Run compiler scripts
-RUN for file in /ctx/compile/*.sh; do
-  bash "$file"
+RUN for file in /ctx/compile/*.sh; do \
+  bash "$file" \
 done
 
 # Sync changes
