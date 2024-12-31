@@ -15,6 +15,7 @@ passwd Admin
 
 echo "Great! Now, just sit back and relax while we do some extra tasks..."
 
+# note: redesign this
 echo "Step 1: Install audio drivers"
 mount -o remount,rw /usr
 cd /usr/share/chromebook-linux-audio
