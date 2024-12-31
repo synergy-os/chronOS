@@ -8,7 +8,6 @@ ln -s /usr/bin/systemctl /usr/bin/cserv
 
 # systemsetup and apx
 cp /ctx/system/applications/sysupdate.desktop /usr/share/applications/
-setenforce 1
 rm /usr/share/apx/stacks/vanilla.yaml \
     /usr/share/apx/stacks/vanilla-dev.yaml \
     /usr/share/apx/stacks/opensuse-leap-15.6.yaml
