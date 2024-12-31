@@ -9,4 +9,4 @@ After=local-fs-pre.target
 Type=oneshot
 ExecStartPre=chattr -i /
 ExecStart=mkdir -p '%f'
-ExecStopPost=chattr +i /
+ExecStopPost=chattr +i / && chattr -i /etc /var
