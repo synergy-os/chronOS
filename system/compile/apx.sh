@@ -19,4 +19,4 @@ cd /
 rm -rf /tmp/apx
 rm -r /root
 ln -s /var/roothome /root
-rpm-ostree override remove go make
+rpm-ostree override remove go
