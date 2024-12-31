@@ -12,9 +12,10 @@ rm /usr/share/apx/stacks/vanilla.yaml \
     /usr/share/apx/stacks/vanilla-dev.yaml \
     /usr/share/apx/stacks/opensuse-leap-15.6.yaml
 
-# copy system files
+# copy/move system files
 cp -r /ctx/system/firstsetup /etc/
-cp -r /ctx/services/* /etc/systemd/system
+cp -r /ctx/services/system/* /etc/systemd/system/
+cp -r /ctx/services/user/* /etc/systemd/user/
 mv /nix /etc/sysnix
 
 # change SELinux policy for Nix
