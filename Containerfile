@@ -3,12 +3,12 @@ ARG SOURCE_IMAGE="silverblue"
 ARG SOURCE_SUFFIX="-main"
 ARG SOURCE_TAG="latest"
 
-# Build the base image
+# Prepare the base image
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
-# Begin compile jobs
-RUN bash /ctx/compile/apx.sh
+# Install Nix
+RUN curl -L https://nixos.org/nix/install | sh -s -- --daemon
 
 # Begin regular build jobs
 RUN mkdir -p /var/lib/alternatives && \
