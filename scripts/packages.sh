@@ -5,8 +5,6 @@ set -ouex pipefail
 # install pkgs
 rpm-ostree install chromebook-linux-audio \
 	gstreamer1-plugin-openh264 \
-	zsh-autosuggestions \
-	zsh-syntax-highlighting \
 	blackbox-terminal \
 	gettext \
 	python3-gobject \
@@ -18,7 +16,6 @@ rpm-ostree install chromebook-linux-audio \
 	clapper \
 	flatseal \
 	secrets \
-	zsh \
  	gcc \
 	nix
 
