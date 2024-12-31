@@ -7,8 +7,9 @@ ARG SOURCE_TAG="latest"
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
-# Compile apx
+# Install programs
 RUN bash /ctx/system/compile/apx.sh
+RUN curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --determinate
 
 # Begin regular build jobs
 RUN mkdir -p /var/lib/alternatives && \
