@@ -4,7 +4,7 @@ Description=Mount nix-store at /nix
 [Mount]
 What=/etc/nix-store
 Where=/nix
-Options=bind
+Options=bind,x-mount.mkdir
 
 [Install]
 WantedBy=local-fs.target
