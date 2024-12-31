@@ -1,5 +1,5 @@
 [Unit]
-Description=Nix Package Manager
+Description=Nix store mount
 DefaultDependencies=no
 After=mkdir-rootfs@nix.service
 Wants=mkdir-rootfs@nix.service

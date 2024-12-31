@@ -1,5 +1,5 @@
 [Unit]
-Description=Enable mount points in / for ostree
+Description=Enable mount points in /
 ConditionPathExists=!%f
 DefaultDependencies=no
 Requires=local-fs-pre.target
