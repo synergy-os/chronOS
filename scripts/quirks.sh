@@ -20,4 +20,4 @@ mv /nix /etc/nix-store
 # enable systemd services/mounts
 systemctl enable nix-daemon # enable nix daemon
 systemctl enable systemsetup.service # enable systemsetup
-systemctl enable nix.automount # enable automount for /var/nix-store to /nix
+systemctl enable nix.mount # enable automount for /var/nix-store to /nix
