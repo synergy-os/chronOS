@@ -15,7 +15,7 @@ rm /usr/share/apx/stacks/vanilla.yaml \
 # copy system files
 cp -r /ctx/system/firstsetup /etc/
 cp -r /ctx/services/* /etc/systemd/system
-mv /nix /var/nix-store
+mv /nix /etc/nix-store
 
 # enable systemd services/mounts
 systemctl enable nix-daemon # enable nix daemon

@@ -2,7 +2,7 @@
 Description=Mount nix-store at /nix
 
 [Mount]
-What=/var/nix-store
+What=/etc/nix-store
 Where=/nix
 Options=bind
 
