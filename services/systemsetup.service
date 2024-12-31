@@ -1,12 +1,12 @@
 [Unit]
-Description=System setup preperation
+Description=System setup preparation
 After=gdm.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash /etc/firstsetup/bin/prep
+ExecStart=/usr/bin/blackbox-terminal -c '/bin/bash /etc/firstsetup/bin/setup'
 RemainAfterExit=true
-ExecStartPost=/usr/bin/systemctl disable systemsetup.service
+ExecStartPost=/usr/bin/systemctl disable --global systemsetup.service
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target

@@ -29,4 +29,4 @@ semanage fcontext -a -t usr_t '/etc/sysnix/var/nix/profiles(/per-user/[^/]+)?/[^
 
 # enable systemd services/mounts
 systemctl enable nix-daemon # enable nix daemon
-systemctl enable systemsetup.service # enable systemsetup
+systemctl enable --global systemsetup.service # enable systemsetup
