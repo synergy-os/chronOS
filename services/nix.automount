@@ -1,0 +1,10 @@
+[Unit]
+Description=Mount nix-store at /nix
+
+[Mount]
+What=/var/nix-store
+Where=/nix
+Options=bind
+
+[Install]
+WantedBy=local-fs.target
