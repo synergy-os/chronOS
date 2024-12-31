@@ -19,7 +19,8 @@ rpm-ostree install chromebook-linux-audio \
 	flatseal \
 	secrets \
 	zsh \
- 	gcc
+ 	gcc \
+	nix
 
 # remove pkgs from base image
 rpm-ostree override remove htop \
