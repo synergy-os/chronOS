@@ -3,8 +3,7 @@
 set -ouex pipefail
 
 # install pkgs
-rpm-ostree install chromebook-linux-audio \
-	gstreamer1-plugin-openh264 \
+rpm-ostree install gstreamer1-plugin-openh264 \
 	blackbox-terminal \
 	gettext \
 	python3-gobject \
