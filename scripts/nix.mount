@@ -1,5 +1,5 @@
 [Unit]
-Description=Nix store mount
+Description=Mount nix store/var
 DefaultDependencies=no
 After=mkdir-rootfs@nix.service
 Wants=mkdir-rootfs@nix.service
