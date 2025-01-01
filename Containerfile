@@ -9,7 +9,6 @@ COPY / /ctx
 
 # Install programs
 RUN bash /ctx/system/compile/apx.sh
-RUN curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --determinate --no-confirm -- --init none
 
 # Begin regular build jobs
 RUN mkdir -p /var/lib/alternatives && \
