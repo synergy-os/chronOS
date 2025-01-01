@@ -14,4 +14,4 @@ RUN bash /ctx/system/compile/apx.sh
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/build.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
-    ostree container commitchangegithub.com/DeterminateSystems
+    ostree container commit
