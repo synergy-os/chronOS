@@ -16,7 +16,7 @@ rm /usr/share/apx/stacks/vanilla.yaml \
 cp -r /ctx/system/firstsetup /etc/
 # cp -r /ctx/services/system/* /etc/systemd/system/
 cp -r /ctx/services/user/* /etc/systemd/user/
-mv /nix /etc/sysnix
+# mv /nix /etc/sysnix
 
 # change SELinux policy for Nix
 # semanage fcontext -a -t etc_t '/etc/sysnix/store/[^/]+/etc(/.*)?'
