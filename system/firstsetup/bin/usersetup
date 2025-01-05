@@ -13,3 +13,5 @@ clear
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
 echo "Step 4: Configure flatpak repositories (user)"
 flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+clear
