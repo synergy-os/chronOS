@@ -1,17 +1,15 @@
 #!/bin/bash
 
-useradd -M --system -s /bin/false Admin -G wheel
-echo Admin:default | chpasswd
-gpasswd --delete $1 wheel
+groupdel wheel
 echo "true" > /etc/firstsetup/misc/setup.lock
 
 clear
 
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
-echo 'Welcome to chronOS! You will now have to set up the Admin user, which you will be relying on for sudo commands.'
-echo 'Make the password something other than your current account.'
+echo 'Welcome to chronOS! You will now have to set up the Administrator user, which you will be relying on for sudo/pkexec commands.'
+echo 'Make the password something other than the one for your current account.'
 
-passwd Admin
+passwd root
 
 echo "Great! Now, just sit back and relax while we do some extra tasks..."
 
