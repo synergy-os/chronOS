@@ -3,8 +3,10 @@
 set -ouex pipefail
 
 # fixes
+rm /usr/bin/sudo
 ln -s /usr/bin/rpm-ostree /usr/bin/chruln
 ln -s /usr/bin/systemctl /usr/bin/cserv
+ln -s /usr/bin/pkexec /usr/bin/sudo
 
 # systemsetup and apx
 cp /ctx/system/applications/sysupdate.desktop /usr/share/applications/
