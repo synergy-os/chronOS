@@ -12,7 +12,6 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 # remove pkgs from base image
 rpm-ostree override remove htop \
 	nvtop \
-	gnome-system-monitor \
  	firefox-langpacks \
 	toolbox \
  	firefox

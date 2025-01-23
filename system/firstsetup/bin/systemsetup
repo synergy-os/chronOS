@@ -13,16 +13,8 @@ passwd root
 
 echo "Great! Now, just sit back and relax while we do some extra tasks..."
 
-# note: redesign this
-echo "Step 1: Install audio drivers"
-mount -o remount,rw /usr
-cd /usr/share/chromebook-linux-audio
-cp -r ./alsa-ucm-conf-cros /tmp
-python3 ./setup-audio
-clear
-
 echo "$(cat /etc/firstsetup/misc/branding.txt)"
-echo "Step 2: Install system flatpaks"
+echo "Step 1: Install system flatpaks"
 yes | flatpak install --system --assumeyes com.spotify.Client \
 	io.github.zen_browser.zen \
 	io.missioncenter.MissionCenter \
