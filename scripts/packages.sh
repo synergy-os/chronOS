@@ -7,11 +7,12 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	clapper \
 	flatseal \
 	secrets \
- 	gcc \
+ 	gcc
 
 # remove pkgs from base image
 rpm-ostree override remove htop \
 	nvtop \
  	firefox-langpacks \
+	gnome-system-monitor \
 	toolbox \
  	firefox
