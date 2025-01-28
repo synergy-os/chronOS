@@ -1,5 +1,5 @@
 # Base image arguments
-ARG SOURCE_IMAGE="silverblue"
+ARG SOURCE_IMAGE="kinoite"
 ARG SOURCE_SUFFIX="-main"
 ARG SOURCE_TAG="latest"
 
