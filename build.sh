@@ -8,3 +8,4 @@ RELEASE="$(rpm -E %fedora)"
 /ctx/scripts/reposetup.sh
 /ctx/scripts/packages.sh
 /ctx/scripts/quirks.sh
+# goddamn rpm-ostree doesnt think theres an update
