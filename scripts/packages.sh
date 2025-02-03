@@ -16,5 +16,4 @@ rpm-ostree override remove htop \
  	firefox-langpacks \
 	firefox \
 	gnome-system-monitor \
-	toolbox \
- 	firefox
+	toolbox
