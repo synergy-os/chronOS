@@ -1,6 +1,6 @@
 # Base image arguments
 ARG SOURCE_IMAGE="cosmic"
-ARG SOURCE_SUFFIX="-main"
+ARG SOURCE_SUFFIX="-kinoite"
 ARG SOURCE_TAG="latest"
 
 # Prepare the base image
