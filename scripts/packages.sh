@@ -5,9 +5,9 @@ set -ouex pipefail
 # install pkgs
 rpm-ostree install gstreamer1-plugin-openh264 \
 	clapper \
-	cosmic-desktop \
 	flatseal \
 	secrets \
+	klassy \
  	gcc
 
 # remove pkgs from base image
@@ -16,4 +16,3 @@ rpm-ostree override remove htop \
  	firefox-langpacks \
 	firefox \
 	toolbox
-	
