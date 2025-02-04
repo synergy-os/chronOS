@@ -8,7 +8,8 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	flatseal \
 	secrets \
 	klassy \
- 	gcc
+ 	gcc \
+	git
 
 # remove pkgs from base image
 rpm-ostree override remove htop \
