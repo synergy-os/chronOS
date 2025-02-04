@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUILD_DEPS="cmake gcc-c++ extra-cmake-modules kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel kf6-ki18n-devel qt6-qtbase-private-devel wayland-devel
+BUILD_DEPS="cmake cmake-data gcc-c++ extra-cmake-modules kwin-devel kf6-kconfigwidgets-devel libepoxy-devel kf6-kcmutils-devel kf6-rpm-macros kf6-ki18n-devel qt6-qtbase-private-devel wayland-devel
 "
 
 # prep
@@ -16,4 +16,4 @@ cmake --build . -j
 make install
 
 # cleanup
-rpm-ostree override remove $BUILD_DEPS cmake-data kf6-rpm-macros
+rpm-ostree override remove $BUILD_DEPS
