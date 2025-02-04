@@ -9,6 +9,7 @@ COPY / /ctx
 
 # Compile scripts
 RUN bash /ctx/system/compile/apx.sh
+RUN bash /ctx/system/compile/kderc.sh
 
 # Begin regular build jobs
 RUN mkdir -p /var/lib/alternatives && \
