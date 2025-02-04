@@ -16,4 +16,4 @@ cmake --build . -j
 make install
 
 # cleanup
-rpm-ostree override remove $BUILD_DEPS
+rpm-ostree override remove $BUILD_DEPS cmake-data kf6-rpm-macros
