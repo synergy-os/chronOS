@@ -14,3 +14,5 @@ cd build
 cmake ..
 cmake --build . -j
 make install
+
+# cleanup
