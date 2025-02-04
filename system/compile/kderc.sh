@@ -14,6 +14,3 @@ cd build
 cmake ..
 cmake --build . -j
 make install
-
-# cleanup
-rpm-ostree override remove $BUILD_DEPS
