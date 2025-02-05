@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/flatpak remote-delete --system flathub
+ExecStart=/usr/bin/bash -c "flatpak remote-delete --system --force flathub && flatpak remote-delete fedora --force && systemctl disable remove-system-flathub.service"
 
 [Install]
 WantedBy=multi-user.target
