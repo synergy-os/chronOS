@@ -1,10 +1,10 @@
 [Unit]
-Description=Delete Flathub Flatpak remote
+Description=Delete system flathub repos
 After=network.target
 
 [Service]
 Type=oneshot
-RemainAfterExit=yes
+RemainAfterExit=no
 ExecStart=/usr/bin/bash -c "flatpak remote-delete --system --force flathub && flatpak remote-delete fedora --force && systemctl disable remove-system-flathub.service"
 
 [Install]

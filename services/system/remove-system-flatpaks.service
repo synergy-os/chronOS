@@ -1,0 +1,11 @@
+[Unit]
+Description=Delete system flatpaks
+After=remove-system-flathub.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/bash -c "flatpak remove org.gnome.Extensions org.gnome.font-viewer org.gnome.clocks org.gnome.Connections org.gnome.Calculator org.gnome.Contacts org.gnome.baobab org.gnome.Evince org.gnome.Loupe org.gnome.Logs org.gnome.Maps org.gnome.NautilusPreviewer org.gnome.TextEditor org.gnome.Weather org.fedoraproject.MediaWriter org.gnome.Snapshot org.gnome.Calendar --assumeyes"
+
+[Install]
+WantedBy=multi-user.target

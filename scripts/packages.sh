@@ -9,6 +9,12 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	kamoso \
 	kcalc \
 	haruna \
+	isoimagewriter \
+	kde-partitionmanager \
+	ksystemlog \
+	marble \
+	okular \
+	kclock \
 	gwenview \
 	flatseal \
 	secrets \

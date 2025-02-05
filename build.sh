@@ -6,6 +6,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # Compilation scripts
 bash /ctx/system/compile/apx.sh
+bash /ctx/system/compile/kderc.sh
 
 # Run scripts
 /ctx/scripts/reposetup.sh
