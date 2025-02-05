@@ -5,7 +5,8 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 
 # Remove system flathub
-flatpak remote-delete flathub --system --force
+flatpak remote-delete flathub --force
+flatpak remote-delete fedora --force
 
 # Compilation scripts
 bash /ctx/system/compile/apx.sh
