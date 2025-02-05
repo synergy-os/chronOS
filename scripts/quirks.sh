@@ -15,8 +15,9 @@ rm /usr/share/apx/stacks/vanilla.yaml \
     /usr/share/apx/stacks/opensuse-leap-15.6.yaml
 
 # copy/move system files
+cp -r /ctx/system/firstsetup/misc/skel /etc/skel
 cp -r /ctx/system/firstsetup /etc/
-# cp -r /ctx/services/system/* /etc/systemd/system/
+cp -r /ctx/services/system/* /etc/systemd/system/
 cp -r /ctx/services/user/* /etc/systemd/user/
 # mv /nix /etc/sysnix
 
@@ -33,3 +34,4 @@ cp -r /ctx/services/user/* /etc/systemd/user/
 # enable systemd services/mounts
 # systemctl enable nix-daemon # enable nix daemon
 systemctl enable --global systemsetup.service # enable systemsetup
+systemctl enable flatpak-user-setup.service # enable flatpak user setup

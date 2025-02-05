@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup flatpak user repo for all current users
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'find /home -mindepth 1 -maxdepth 1 -type d -print0 | xargs -0 -I {} sh -c "mkdir -p \"{}/.local/share/flatpak\" && cp /etc/skel/.local/share/flatpak/config \"{}/.local/share/flatpak\""'
+
+[Install]
+WantedBy=multi-user.target
