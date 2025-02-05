@@ -5,10 +5,12 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 
 # Remove system flathub
-flatpak remote-delete flathub --assumeyes
+flatpak remote-delete flathub --system --force
+
+# Compilation scripts
+bash /ctx/system/compile/apx.sh
 
 # Run scripts
 /ctx/scripts/reposetup.sh
 /ctx/scripts/packages.sh
 /ctx/scripts/quirks.sh
-# goddamn rpm-ostree doesnt think theres an update

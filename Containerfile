@@ -7,11 +7,7 @@ ARG SOURCE_TAG="latest"
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
-# Compile scripts
-RUN bash /ctx/system/compile/apx.sh
-RUN bash /ctx/system/compile/kderc.sh
-
-# Begin regular build jobs
+# Begin build job
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/build.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
