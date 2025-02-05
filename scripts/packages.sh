@@ -8,7 +8,8 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	kweather \
 	kamoso \
 	kcalc \
-	clapper \
+	haruna \
+	gwenview \
 	flatseal \
 	secrets \
 	klassy \
