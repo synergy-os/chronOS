@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+
+Name=System Password Setup
+Exec=/usr/bin/konsole --fullscreen -e "bash /etc/firstsetup/bin/syspasswdsetup"

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-
-Name=Setup
-Exec=/usr/bin/blackbox-terminal -c 'echo 'Preparing... don't close this window.' && sleep 3 && bash /etc/firstsetup/bin/setup'
-Icon=preferences-desktop
-
-Comment=First Setup

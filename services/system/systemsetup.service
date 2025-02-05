@@ -1,0 +1,12 @@
+[Unit]
+Description=System setup preparation
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'find /home -mindepth 1 -maxdepth 1 -type d -print0 | xargs -0 -I {} sh -c "mkdir -p \"{}/.config/autostart\" && cp /etc/firstsetup/misc/systsetup.desktop \"{}/.config/autostart\""'
+RemainAfterExit=false
+ExecStartPost=/usr/bin/systemctl disable systemsetup.service
+
+[Install]
+WantedBy=multi-user.target

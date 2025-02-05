@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+
+Name=Setup
+Exec=/usr/bin/konsole --fullscreen -e 'echo $(cat /etc/firstsetup/misc/branding.txt) && echo 'Preparing... don't close this window.' && sleep 3 && clear && bash /etc/firstsetup/bin/syspasswdsetup'
+Icon=preferences-desktop
+
+Comment=First Setup
