@@ -1,0 +1,11 @@
+[Unit]
+Description=Delete Flathub Flatpak remote
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/flatpak remote-delete --system flathub
+
+[Install]
+WantedBy=multi-user.target

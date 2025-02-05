@@ -35,3 +35,4 @@ cp -r /ctx/services/user/* /etc/systemd/user/
 # systemctl enable nix-daemon # enable nix daemon
 systemctl enable --global systemsetup.service # enable systemsetup
 systemctl enable flatpak-user-setup.service # enable flatpak user setup
+systemctl enable remove-system-flathub.service # enable system flathub removal
