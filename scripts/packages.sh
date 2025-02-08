@@ -3,8 +3,8 @@
 set -ouex pipefail
 
 # install pkgs
-dnf5 install gstreamer1-plugin-openh264 \
-	konqueror \
+dnf5 -y install gstreamer1-plugin-openh264 \
+	brave-browser \
 	kweather \
 	kamoso \
 	kcalc \
@@ -22,7 +22,7 @@ dnf5 install gstreamer1-plugin-openh264 \
 	git
 
 # remove pkgs from base image
-dnf5 remove htop \
+dnf5 -y remove htop \
 	nvtop \
  	firefox-langpacks \
 	firefox \

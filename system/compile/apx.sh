@@ -2,7 +2,7 @@
 
 # prep
 set -ouex pipefail
-rpm-ostree install go make
+dnf5 -y install go make
 rm /root && mkdir /root
 mkdir -p /usr/share/apx
 

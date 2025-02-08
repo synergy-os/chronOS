@@ -4,7 +4,7 @@ BUILD_DEPS="cmake cmake-data gcc-c++ extra-cmake-modules kwin-devel kf6-kconfigw
 "
 
 # prep
-rpm-ostree install $BUILD_DEPS
+dnf5 -y install $BUILD_DEPS
 
 # compile
 git clone https://github.com/matinlotfali/KDE-Rounded-Corners
