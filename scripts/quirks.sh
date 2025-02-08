@@ -8,8 +8,8 @@ rm /usr/bin/pkexec
 cp /ctx/system/bin/sudo /bin
 ln -s /usr/bin/rpm-ostree /usr/bin/chruln
 ln -s /usr/bin/systemctl /usr/bin/cserv
-ln -s /usr/bin/pkexec /bin/sudo
-ln -s /usr/bin/sudo /bin/sudo
+ln -s /bin/sudo /usr/bin/pkexec
+ln -s /bin/sudo /usr/bin/sudo
 
 # systemsetup and apx
 cp /ctx/system/applications/sysupdate.desktop /usr/share/applications/
