@@ -4,7 +4,6 @@ set -ouex pipefail
 
 # fixes
 rm /bin/sudo
-rm /usr/bin/sudo
 rm /usr/bin/pkexec
 cp /ctx/system/bin/sudo /bin
 ln -s /usr/bin/rpm-ostree /usr/bin/chruln
