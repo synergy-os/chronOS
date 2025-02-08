@@ -16,7 +16,6 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	okular \
 	kclock \
 	gwenview \
-	flatseal \
 	secrets \
 	klassy \
  	gcc \
