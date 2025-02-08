@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 # install pkgs
-rpm-ostree install gstreamer1-plugin-openh264 \
+dnf5 install gstreamer1-plugin-openh264 \
 	konqueror \
 	kweather \
 	kamoso \
@@ -22,7 +22,7 @@ rpm-ostree install gstreamer1-plugin-openh264 \
 	git
 
 # remove pkgs from base image
-rpm-ostree override remove htop \
+dnf5 remove htop \
 	nvtop \
  	firefox-langpacks \
 	firefox \
