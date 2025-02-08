@@ -3,6 +3,7 @@
 set -ouex pipefail
 
 # fixes
+rm /usr/bin/sudo
 cp /ctx/system/bin/sudo /bin
 ln -s /usr/bin/rpm-ostree /usr/bin/chruln
 ln -s /usr/bin/systemctl /usr/bin/cserv
