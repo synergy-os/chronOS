@@ -4,7 +4,7 @@ set -ouex pipefail
 
 # install pkgs
 rpm-ostree install gstreamer1-plugin-openh264 \
-	/tmp/brave-browser-1.75.175-1.x86_64.rpm \
+	konqueror \
 	kweather \
 	kamoso \
 	kcalc \
