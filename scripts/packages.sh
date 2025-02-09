@@ -4,6 +4,7 @@ set -ouex pipefail
 
 # install pkgs
 dnf5 -y install gstreamer1-plugin-openh264 \
+	plasma-wallpapers-dynamic \
 	librewolf \
 	kweather \
 	kamoso \
