@@ -6,7 +6,6 @@ RELEASE="$(rpm -E %fedora)"
 
 # Compilation scripts
 bash /ctx/system/compile/apx.sh
-bash /ctx/system/compile/hyprpanel.sh
 dnf5 -y autoremove
 
 # Run scripts
