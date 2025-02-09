@@ -1,0 +1,11 @@
+[Unit]
+Description=Configure falseopt
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=false
+ExecStart=/usr/bin/cp -r /etc/falseopt/* /var/opt
+
+[Install]
+WantedBy=multi-user.target
