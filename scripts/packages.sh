@@ -4,26 +4,35 @@ set -ouex pipefail
 
 # install pkgs
 dnf5 -y install gstreamer1-plugin-openh264 \
-	plasma-wallpapers-dynamic \
+	hyprland \
+	hyprpaper \
+	hyprlock \
+	hypridle \
+	hyprsunset \
+	hyprpolkitagent \
+	hyprshot \
+	hyprnome \
+	aylurs-gtk-shell \
+	eww-git \
 	librewolf \
-	kweather \
-	kamoso \
-	kcalc \
-	haruna \
-	isoimagewriter \
-	kde-partitionmanager \
-	ksystemlog \
-	marble \
-	okular \
-	kclock \
-	gwenview \
+	gnome-weather \
+	snapshot \
+	gnome-calculator \
+	totem \
+	gnome-disks \
+	gparted \
+	gnome-logs \
+	gnome-maps \
+	evince \
+	gnome-clocks \
+	loupe \
 	secrets \
-	klassy \
  	gcc \
 	git
 
 # remove pkgs from base image
 dnf5 -y remove htop \
+	plasma-desktop \
 	nvtop \
  	firefox-langpacks \
 	firefox \
