@@ -8,7 +8,7 @@ wget -O /etc/yum.repos.d/ryanabx-cosmic-epoch-fedora-41.repo \
     https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-41/ryanabx-cosmic-epoch-fedora-41.repo
 wget -O /etc/yum.repos.d/home:paul4us.repo \
     https://download.opensuse.org/repositories/home:paul4us/Fedora_41/home:paul4us.repo
-wget -O /etc/yum.repos.d/brave-browser.repo \
-    https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+wget -O /etc/yum.repos.d/librewolf-browser.repo \
+    https://repo.librewolf.net/librewolf.repo
 # wget -O /etc/yum.repos.d/_copr_petersen-nix-fedora-41.repo \
 #    https://copr.fedorainfracloud.org/coprs/petersen/nix/repo/fedora-41/petersen-nix-fedora-41.repo

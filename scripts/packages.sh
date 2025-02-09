@@ -2,13 +2,9 @@
 
 set -ouex pipefail
 
-# fixes
-rm /opt
-mkdir /opt
-
 # install pkgs
 dnf5 -y install gstreamer1-plugin-openh264 \
-	brave-browser \
+	librewolf \
 	kweather \
 	kamoso \
 	kcalc \
@@ -31,8 +27,3 @@ dnf5 -y remove htop \
  	firefox-langpacks \
 	firefox \
 	toolbox
-
-# fixes
-cp -r /opt/* /etc/falseopt
-rm -r /opt
-ln -s /var/opt /opt
