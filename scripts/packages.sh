@@ -15,6 +15,8 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	aylurs-gtk-shell \
 	rofi-wayland \
 	eww-git \
+	swww \
+	meson \
 	librewolf \
 	gnome-weather \
 	snapshot \
