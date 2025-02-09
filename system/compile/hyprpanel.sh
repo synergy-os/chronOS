@@ -19,7 +19,7 @@ dnf5 -y install meson \
 	gvfs \
 	nodejs \
 	aylurs-gtk-shell \
-    swww \
+    swww
 npm install -g sass
 
 git clone https://github.com/Jas-SinghFSU/HyprPanel.git
