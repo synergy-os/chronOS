@@ -12,11 +12,8 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	hyprpolkitagent \
 	hyprshot \
 	hyprnome \
-	aylurs-gtk-shell \
 	rofi-wayland \
 	eww-git \
-	swww \
-	meson \
 	librewolf \
 	gnome-weather \
 	snapshot \
