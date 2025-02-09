@@ -13,6 +13,7 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	hyprshot \
 	hyprnome \
 	aylurs-gtk-shell \
+	rofi-wayland \
 	eww-git \
 	librewolf \
 	gnome-weather \
