@@ -7,7 +7,8 @@ set -ouex pipefail
 dnf5 -y install grim \
     slurp \
     wl-clipboard \
-    jq
+    jq \
+    scdoc
 
 # clone repo
 git clone https://github.com/hyprwm/contrib /tmp/contrib
