@@ -19,6 +19,8 @@ dnf5 -y install wireplumber \
     power-profiles-daemon \
     gvfs \
     nodejs
+# conflict fix
+dnf5 -y remove tuned-ppd
 npm install -g sass
 
 # compile
