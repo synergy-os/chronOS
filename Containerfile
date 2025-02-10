@@ -9,6 +9,6 @@ COPY / /ctx
 
 # Begin build job
 RUN mkdir -p /var/lib/alternatives && \
-    /ctx/build.sh && \
+    /ctx/scripts/main/build.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
     ostree container commit

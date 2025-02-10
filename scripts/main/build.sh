@@ -6,7 +6,7 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 chmod +x /ctx/scripts/compile/*.sh -R
 chmod +x /ctx/scripts/packages/*.sh -R
-/ctx/scripts/reposetup.sh
+/ctx/scripts/main/reposetup.sh
 
 # Run compilation scripts
 # /root needs to be replaced since it's a broken symlink
@@ -25,4 +25,4 @@ dnf5 -y autoremove
 /ctx/scripts/packages/hyprpackages.sh
 
 # Run touchup script
-/ctx/scripts/quirks.sh
+/ctx/scripts/main/quirks.sh
