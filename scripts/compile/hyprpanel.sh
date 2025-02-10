@@ -13,7 +13,13 @@ dnf5 -y install libgtop2 \
     gnome-bluetooth \
     power-profiles-daemon \
     gvfs \
-    gjs \
+    astal \
+    astal-gjs \
+    astal-gtk4 \
+    astal-io \
+    astal-libs \
+    astal-lua \
+    aylurs-gtk-shell2 \
     nodejs
 
 # compile
