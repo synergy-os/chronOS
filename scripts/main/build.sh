@@ -1,11 +1,10 @@
 #!/bin/bash
 
-set -ouex pipefail
-
 # prep
+set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
-chmod +x /ctx/scripts/compile/*.sh -R
-chmod +x /ctx/scripts/packages/*.sh -R
+
+# Set up repositories
 /ctx/scripts/main/reposetup.sh
 
 # Run compilation scripts

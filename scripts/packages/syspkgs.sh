@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# prep
 set -ouex pipefail
 
 # install system pkgs

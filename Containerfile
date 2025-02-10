@@ -7,6 +7,11 @@ ARG SOURCE_TAG="latest"
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY / /ctx
 
+# Prepare script usage
+RUN chmod +x /ctx/scripts/compile/*.sh -R
+RUN chmod +x /ctx/scripts/packages/*.sh -R
+RUN chmod +x /ctx/scripts/main/*.sh -R
+
 # Begin build job
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/scripts/main/build.sh && \
