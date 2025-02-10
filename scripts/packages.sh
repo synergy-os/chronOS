@@ -25,9 +25,7 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	evince \
 	gnome-clocks \
 	loupe \
-	secrets \
- 	gcc \
-	git
+	secrets
 
 # remove pkgs from base image
 dnf5 -y remove htop \
