@@ -16,4 +16,3 @@ make install-manpages
 # cleanup
 cd /
 rm -rf /tmp/apx
-dnf5 -y remove git gcc glibc-devel go-filesystem golang golang-bin golang-src kernel-headers libserf libxcrypt-devel make mercurial perl-Error perl-File-Find perl-Git perl-TermReadKey perl-lib subversion subversion-libs utf8proc
