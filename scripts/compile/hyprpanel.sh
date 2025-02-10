@@ -21,7 +21,8 @@ dnf5 -y install libgtop2 \
     astal-libs \
     astal-lua \
     aylurs-gtk-shell2 \
-    nodejs
+    nodejs \
+    meson
 
 # compile
 git clone https://github.com/Jas-SinghFSU/HyprPanel.git
