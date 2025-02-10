@@ -11,6 +11,7 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	hyprsunset \
 	hyprpolkitagent \
 	hyprshot \
+	hyprpanel \
 	rofi-wayland \
 	librewolf \
 	gnome-weather \
