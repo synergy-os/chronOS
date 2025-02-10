@@ -13,4 +13,4 @@ go install -ldflags "\
 
 # move binary
 go env
-mv $GOROOT/bin/ags /usr/bin/
+mv /root/go/bin/ags /usr/bin/
