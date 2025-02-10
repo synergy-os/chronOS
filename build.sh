@@ -4,8 +4,13 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 
-# Compilation scripts
+# Compilation
+rm /root && mkdir /root
 bash /ctx/system/compile/apx.sh
+bash /ctx/system/compile/astal.sh
+bash /ctx/system/compile/ags.sh
+rm -r /root
+ln -s /var/roothome /root
 dnf5 -y autoremove
 
 # Run scripts
