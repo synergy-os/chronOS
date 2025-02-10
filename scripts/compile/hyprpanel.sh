@@ -5,22 +5,16 @@ set -ouex pipefail
 # conflict fix
 dnf5 -y remove tuned-ppd
 # install deps
-dnf5 -y install wireplumber \
-    upower \
-    libgtop2 \
-    bluez \
+dnf5 -y install libgtop2 \
     bluez-tools \
-    grimblast \
     hyprpicker \
     btop \
-    NetworkManager \
-    wl-clipboard \
-    swww \
     brightnessctl \
     gnome-bluetooth \
     power-profiles-daemon \
     gvfs \
     nodejs
+dnf5 -y --disablerepo="*" --enablerepo="solopasha-hyprland" install swww
 npm install -g sass
 
 # compile
