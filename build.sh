@@ -4,6 +4,7 @@ set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
 chmod +x /ctx/scripts/compile/*.sh -R
+/ctx/scripts/reposetup.sh
 
 # Compilation
 rm /root && mkdir /root
@@ -14,6 +15,5 @@ ln -s /var/roothome /root
 dnf5 -y autoremove
 
 # Run scripts
-/ctx/scripts/reposetup.sh
 /ctx/scripts/packages.sh
 /ctx/scripts/quirks.sh
