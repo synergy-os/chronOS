@@ -13,8 +13,7 @@ dnf5 -y install libgtop2 \
     gnome-bluetooth \
     power-profiles-daemon \
     gvfs \
-    nodejs \
-    swww
+    nodejs
 npm install -g sass
 
 # compile
