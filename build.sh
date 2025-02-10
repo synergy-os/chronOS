@@ -3,12 +3,14 @@
 set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
+chmod +x /ctx/scripts/compile/*.sh -R
 
 # Compilation
 rm /root && mkdir /root
-bash /ctx/system/compile/apx.sh
-bash /ctx/system/compile/astal.sh
-bash /ctx/system/compile/ags.sh
+/ctx/scripts/compile/apx.sh
+/ctx/scripts/compile/astal.sh
+/ctx/scripts/compile/ags.sh
+/ctx/scripts/compile/hyprpanel.sh
 rm -r /root
 ln -s /var/roothome /root
 dnf5 -y autoremove
