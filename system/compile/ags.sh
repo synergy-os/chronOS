@@ -12,4 +12,5 @@ go install -ldflags "\
     -X 'main.astalGjs=$(pkg-config --variable=srcdir astal-gjs)'"
 
 # move binary
+go env
 mv $GOROOT/bin/ags /usr/bin/
