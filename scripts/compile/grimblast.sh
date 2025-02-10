@@ -11,13 +11,9 @@ dnf5 -y install grim \
     jq \
     scdoc
 
-# clone repo
-git clone https://github.com/hyprwm/contrib /tmp/contrib
-cd /tmp/contrib/grimblast
-
-# compile
-make
-make install
+# install
+wget -O /usr/bin \
+    https://raw.githubusercontent.com/hyprwm/contrib/refs/heads/main/grimblast/grimblast
 
 # cleanup
 cd /
