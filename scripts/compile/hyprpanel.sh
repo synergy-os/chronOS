@@ -13,8 +13,8 @@ dnf5 -y install libgtop2 \
     gnome-bluetooth \
     power-profiles-daemon \
     gvfs \
-    nodejs
-dnf5 -y --disablerepo="*" --enablerepo="solopasha-hyprland" install swww
+    nodejs \
+    swww
 npm install -g sass
 
 # compile
