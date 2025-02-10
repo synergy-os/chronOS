@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# prep
 set -ouex pipefail
+
+# prep/install deps
 dnf5 -y install go make
 mkdir -p /usr/share/apx
 
