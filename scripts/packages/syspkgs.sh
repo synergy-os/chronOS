@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prep
+echo "::group:: === Install system packages ==="
 set -ouex pipefail
 
 # install system pkgs
@@ -18,3 +19,6 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	gnome-clocks \
 	loupe \
 	secrets
+
+# cleanup
+echo "::endgroup::"

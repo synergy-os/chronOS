@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prep
+echo "::group:: === Install hyprland packages ==="
 set -ouex pipefail
 
 # install hyprland-related pkgs
@@ -16,3 +17,6 @@ dnf5 -y install hyprland \
 	hyprpicker \
 	rofi-wayland \
 	rubygem-sass
+
+# cleanup
+echo "::endgroup::"

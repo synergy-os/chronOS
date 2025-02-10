@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prep
+echo "::group:: === Compile grimblast ==="
 set -ouex pipefail
 
 # install deps
@@ -21,3 +22,4 @@ make install
 # cleanup
 cd /
 rm -rf /tmp/contrib
+echo "::endgroup::"

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prep
+echo "::group:: === Compile apx ==="
 set -ouex pipefail
 
 # prep/install deps
@@ -18,3 +19,4 @@ make install-manpages
 # cleanup
 cd /
 rm -rf /tmp/apx
+echo "::endgroup::"
