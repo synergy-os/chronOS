@@ -13,6 +13,7 @@ dnf5 -y install libgtop2 \
     gnome-bluetooth \
     power-profiles-daemon \
     gvfs \
+    gjs \
     nodejs
 
 # compile
