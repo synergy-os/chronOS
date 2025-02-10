@@ -12,7 +12,10 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	hyprpolkitagent \
 	hyprshot \
 	hyprpanel \
+	hyprctl \
+	hyprpicker \
 	rofi-wayland \
+	rubygem-sass \
 	librewolf \
 	gnome-weather \
 	snapshot \
