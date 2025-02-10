@@ -2,15 +2,9 @@
 
 set -ouex pipefail
 
-wget -O /etc/yum.repos.d/_copr_pvermeer-chromebook-linux-audio.repo \
-    https://copr.fedorainfracloud.org/coprs/pvermeer/chromebook-linux-audio/repo/fedora-41/pvermeer-chromebook-linux-audio-fedora-41.repo
-wget -O /etc/yum.repos.d/ryanabx-cosmic-epoch-fedora-41.repo \
-    https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-41/ryanabx-cosmic-epoch-fedora-41.repo
-wget -O /etc/yum.repos.d/home:paul4us.repo \
-    https://download.opensuse.org/repositories/home:paul4us/Fedora_41/home:paul4us.repo
-wget -O /etc/yum.repos.d/librewolf-browser.repo \
-    https://repo.librewolf.net/librewolf.repo
-wget -O /etc/yum.repos.d/solopasha-hyprland-fedora-41.repo \
-    https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
-# wget -O /etc/yum.repos.d/_copr_petersen-nix-fedora-41.repo \
-#    https://copr.fedorainfracloud.org/coprs/petersen/nix/repo/fedora-41/petersen-nix-fedora-41.repo
+dnf5 -y copr enable solopasha/hyprland
+dnf5 -y copr enable pvermeer/chromebook-linux-audio
+dnf5 -y copr enable bgstack15/AfterMozilla
+dnf5 -y copr enable heus-sueh/packages
+dnf5 -y copr enable petersen/nix
+dnf5 -y config-manager --save --setopt=copr:copr.fedorainfracloud.org:heus-sueh:packages.priority=200
