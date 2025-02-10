@@ -14,7 +14,6 @@ dnf5 -y install libgtop2 \
     power-profiles-daemon \
     gvfs \
     nodejs
-npm install -g sass
 
 # compile
 git clone https://github.com/Jas-SinghFSU/HyprPanel.git
