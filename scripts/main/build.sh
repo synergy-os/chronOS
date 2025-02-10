@@ -21,7 +21,7 @@ dnf5 -y autoremove
 # Run package scripts
 /ctx/scripts/packages/rmpkgs.sh
 /ctx/scripts/packages/syspkgs.sh
-/ctx/scripts/packages/hyprpackages.sh
+/ctx/scripts/packages/hyprpkgs.sh
 
 # Run touchup script
 /ctx/scripts/main/quirks.sh
