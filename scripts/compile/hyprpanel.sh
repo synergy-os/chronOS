@@ -12,6 +12,7 @@ dnf5 -y install libgtop2 \
     brightnessctl \
     gnome-bluetooth \
     power-profiles-daemon \
+    appmenu-glib-translator \
     gvfs \
     swww \
     astal \
