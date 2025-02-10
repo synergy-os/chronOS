@@ -9,7 +9,7 @@ chmod +x /ctx/scripts/compile/*.sh -R
 # Compilation
 rm /root && mkdir /root
 /ctx/scripts/compile/apx.sh
-/ctx/scripts/compile/hyprpanel.sh
+# /ctx/scripts/compile/hyprpanel.sh
 rm -r /root
 ln -s /var/roothome /root
 dnf5 -y autoremove

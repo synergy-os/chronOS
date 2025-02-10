@@ -15,13 +15,7 @@ dnf5 -y install libgtop2 \
     appmenu-glib-translator \
     gvfs \
     swww \
-    astal \
-    astal-gjs \
-    astal-gtk4 \
-    astal-io \
-    astal-libs \
-    astal-lua \
-    aylurs-gtk-shell2 \
+    hyprpanel \
     nodejs \
     meson
 
