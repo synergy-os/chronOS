@@ -16,7 +16,9 @@ rm -r /root
 ln -s /var/roothome /root
 
 # Remove unused pkgs if any
+echo "::group:: === Autoremove"
 dnf5 -y autoremove
+echo "::endgroup::"
 
 # Run package scripts
 /ctx/scripts/packages/rmpkgs.sh
