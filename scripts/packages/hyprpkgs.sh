@@ -16,7 +16,8 @@ dnf5 -y install hyprland \
 	hyprctl \
 	hyprpicker \
 	rofi-wayland \
-	rubygem-sass
+	rubygem-sass \
+	astal-gtk4
 
 # cleanup
 echo "::endgroup::"
