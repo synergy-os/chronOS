@@ -10,7 +10,6 @@ RELEASE="$(rpm -E %fedora)"
 # Run compilation scripts
 # /root needs to be replaced since it's a broken symlink
 rm /root && mkdir /root
-/ctx/scripts/compile/apx.sh
 /ctx/scripts/compile/grimblast.sh
 rm -r /root
 ln -s /var/roothome /root
