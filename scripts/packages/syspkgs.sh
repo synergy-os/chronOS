@@ -18,7 +18,8 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	evince \
 	gnome-clocks \
 	loupe \
-	secrets
+	secrets \
+        apx
 
 # cleanup
 echo "::endgroup::"
