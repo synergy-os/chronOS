@@ -19,7 +19,8 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	gnome-clocks \
 	loupe \
 	secrets \
-        apx
+	libapx-gui \
+    libapx
 
 # cleanup
 echo "::endgroup::"
