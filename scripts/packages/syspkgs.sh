@@ -20,6 +20,7 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	loupe \
 	secrets \
 	libapx-gui \
+	libapx-conf \
     libapx
 
 # cleanup
