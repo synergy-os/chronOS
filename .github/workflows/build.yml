@@ -1,5 +1,5 @@
 ---
-name: chronOS
+name: chronos
 on:
   pull_request:
     branches:
@@ -19,7 +19,7 @@ env:
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-${{ inputs.brand_name}}-${{ inputs.stream_name }}
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-${{ inputs.brand_name }}-${{ inputs.stream_name }}
   cancel-in-progress: true
 
 jobs:
