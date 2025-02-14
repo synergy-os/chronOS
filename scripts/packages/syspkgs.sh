@@ -28,4 +28,6 @@ dnf5 -y install gstreamer1-plugin-openh264 \
     apx
 
 # swap fedora-logos and chronos due to conflicts
-dnf5 -y swap fedora-logos chronos
+dnf5 -y swap \
+--repo=copr:copr.fedorainfracloud.org:chronos:syspkgs \
+	fedora-logos chronos
