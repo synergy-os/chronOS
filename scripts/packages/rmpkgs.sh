@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # prep
-echo "::group:: === Remove system packages ==="
 set -ouex pipefail
 
 # remove pkgs from base image
@@ -23,6 +22,3 @@ dnf5 -y remove htop \
 	konsole \
 	krfb \
 	kdebugsettings
-
-# cleanup
-echo "::endgroup::"

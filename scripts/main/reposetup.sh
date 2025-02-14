@@ -1,16 +1,12 @@
 #!/bin/bash
 
 # prep
-echo "::group:: === Setup repositories ==="
 set -ouex pipefail
 
 # enable coprs
-dnf5 -y copr enable solopasha/hyprland
-dnf5 -y copr enable pvermeer/chromebook-linux-audio
-dnf5 -y copr enable bgstack15/AfterMozilla
-dnf5 -y copr enable pabrahamsson/hyprpanel
-dnf5 -y copr enable petersen/nix
-dnf5 -y copr enable chronos/syspkgs
-
-# cleanup
-echo "::endgroup::"
+dnf5 -y copr enable chronos/syspkgs # main chronOS repo
+dnf5 -y copr enable solopasha/hyprland # hyprland deps repo
+dnf5 -y copr enable pvermeer/chromebook-linux-audio # chromebook audio support
+dnf5 -y copr enable bgstack15/AfterMozilla # librewolf repository
+dnf5 -y copr enable pabrahamsson/hyprpanel # hyprpanel repository
+# dnf5 -y copr enable petersen/nix # nix repository, will be integrated soon

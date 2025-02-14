@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # prep
-echo "::group:: === Install system packages ==="
 set -ouex pipefail
 
 # install system pkgs
@@ -24,9 +23,6 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	nautilus \
 	sushi \
 	gnome-text-editor \
-	libapx-gui \
-	libapx-conf \
-    libapx
-
-# cleanup
-echo "::endgroup::"
+	apx-gui \
+	apx-conf \
+    apx

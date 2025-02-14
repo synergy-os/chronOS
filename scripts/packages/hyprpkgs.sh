@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # prep
-echo "::group:: === Install hyprland packages ==="
 set -ouex pipefail
 
 # install hyprland-related pkgs
@@ -19,6 +18,3 @@ dnf5 -y install hyprland \
 	rubygem-sass \
 	astal-gtk4 \
 	grimblast
-
-# cleanup
-echo "::endgroup::"
