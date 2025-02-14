@@ -10,7 +10,19 @@ dnf5 -y remove htop \
 	nvtop \
  	firefox-langpacks \
 	firefox \
-	toolbox
+	toolbox \
+	sddm \
+	dolphin \
+	systemsettings \
+	kate \
+	kwrite \
+	filelight \
+	kde-partitionmanager \
+	kcharselect \
+	kwallet \
+	konsole \
+	krfb \
+	kdebugsettings
 
 # cleanup
 echo "::endgroup::"

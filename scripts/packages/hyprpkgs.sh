@@ -17,7 +17,8 @@ dnf5 -y install hyprland \
 	hyprpicker \
 	rofi-wayland \
 	rubygem-sass \
-	astal-gtk4
+	astal-gtk4 \
+	grimblast
 
 # cleanup
 echo "::endgroup::"

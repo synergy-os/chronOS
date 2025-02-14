@@ -6,6 +6,7 @@ set -ouex pipefail
 
 # install system pkgs
 dnf5 -y install gstreamer1-plugin-openh264 \
+	slick-greeter \
 	librewolf \
 	gnome-weather \
 	snapshot \
@@ -19,6 +20,10 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	gnome-clocks \
 	loupe \
 	secrets \
+	file-roller \
+	nautilus \
+	sushi \
+	gnome-text-editor \
 	libapx-gui \
 	libapx-conf \
     libapx
