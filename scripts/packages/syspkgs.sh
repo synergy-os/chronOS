@@ -23,7 +23,9 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	nautilus \
 	sushi \
 	gnome-text-editor \
-	chronos \
 	apx-gui \
 	apx-conf \
     apx
+
+# swap fedora-logos and chronos due to conflicts
+dnf5 -y swap fedora-logos chronos
