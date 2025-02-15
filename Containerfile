@@ -13,6 +13,6 @@ RUN chmod +x /ctx/scripts/main/*.sh -R
 
 # Begin build job
 RUN mkdir -p /var/lib/alternatives && \
-    /ctx/scripts/main/build.sh && \
+    /ctx/scripts/00-build-image.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
     ostree container commit
