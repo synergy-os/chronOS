@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "Sudo or pkexec DO NOT WORK on this system. Note that this may render some scripts unusable."
-echo "Please use 'run0' instead. Continuing with 'run0'!"
-
-run0 $@
