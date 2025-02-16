@@ -33,8 +33,8 @@ echo "::group:: === Setup custom commands ==="
 /ctx/scripts/05-command-setup.sh
 echo "::endgroup::"
 echo "::group:: === Setup system services ==="
-/ctx/scripts/06-system-services.sh
+/ctx/scripts/06-copy-sysfiles.sh
 echo "::endgroup::"
 echo "::group:: === Setup extra quirks ==="
-/ctx/scripts/07-extra-quirks.sh
+/ctx/scripts/07-system-services.sh
 echo "::endgroup::"
