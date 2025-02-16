@@ -7,6 +7,7 @@ set -ouex pipefail
 dnf5 -y remove htop \
 	plasma-desktop \
 	nvtop \
+ sudo \
  	firefox-langpacks \
 	firefox \
 	fedora-logos \
