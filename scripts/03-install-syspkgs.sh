@@ -23,6 +23,8 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	nautilus \
 	sushi \
 	gnome-text-editor \
+ sysconf \
+ flatpak-usr \
 	topgrade \
 	apx-gui \
 	apx-conf \
