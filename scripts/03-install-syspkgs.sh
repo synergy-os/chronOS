@@ -12,6 +12,7 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	gnome-calculator \
 	totem \
 	gnome-disks \
+ gnome-tweaks \
 	gparted \
 	gnome-logs \
 	gnome-maps \
