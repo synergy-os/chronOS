@@ -6,7 +6,6 @@ echo "==================> Preparation"
 echo "::group:: === Prep ==="
 set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
-rm /etc/dnf/protected.d/sudo.conf
 echo "::endgroup::"
 
 # Set up repositories
