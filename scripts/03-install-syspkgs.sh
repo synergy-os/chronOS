@@ -5,7 +5,7 @@ set -ouex pipefail
 
 # install system pkgs
 dnf5 -y install gstreamer1-plugin-openh264 \
-	slick-greeter \
+	gdm \
 	librewolf \
 	gnome-weather \
 	snapshot \
