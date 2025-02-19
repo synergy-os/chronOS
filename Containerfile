@@ -14,4 +14,4 @@ RUN chmod +x /ctx/scripts/*.sh -R
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/scripts/00-build-image.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
-    bootc container lint
+    bootc container commit
