@@ -27,6 +27,9 @@ dnf5 -y install gstreamer1-plugin-openh264 \
 	sysconf \
 	flatpak-usr \
 	topgrade \
+	tealdeer \
+	atuin \
+	didyoumean \
 	apx-gui \
 	apx-conf \
     apx
