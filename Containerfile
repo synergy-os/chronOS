@@ -10,7 +10,7 @@ COPY / /ctx
 # Prepare script usage
 RUN chmod +x /ctx/scripts/*.sh -R
 
-# Begin build job
+# Begin image build
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/scripts/00-build-image.sh && \
     mv /var/lib/alternatives /staged-alternatives && \
