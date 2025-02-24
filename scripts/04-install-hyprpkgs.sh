@@ -11,7 +11,7 @@ dnf5 -y install hyprland \
 	hyprsunset \
 	hyprpolkitagent \
 	hyprshot \
-	material-you-hyprland \
+	hyprland-material-you \
 	hyprctl \
 	hyprpicker \
 	rofi-wayland \
