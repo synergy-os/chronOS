@@ -11,10 +11,8 @@ dnf5 -y install hyprland \
 	hyprsunset \
 	hyprpolkitagent \
 	hyprshot \
-	hyprpanel \
+	material-you-hyprland \
 	hyprctl \
 	hyprpicker \
 	rofi-wayland \
 	rubygem-sass \
-	astal-gtk4 \
-	grimblast
