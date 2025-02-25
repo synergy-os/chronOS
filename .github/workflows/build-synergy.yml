@@ -11,6 +11,8 @@ on:
       - synergy
     paths-ignore:
       - '**/README.md'
+    paths:
+      - '.github/workflows/build-synergy.yml'
   workflow_dispatch:
 
 env:
